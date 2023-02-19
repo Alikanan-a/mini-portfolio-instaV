@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--===============ICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- link Remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- name fo document -->
+    <title>d</title>
+</head>
+
+<body>
+    <!--=============== HEADER PROFILE ===============-->
+    <header class="profile container">
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfile">
+                        <img src="assets/img/perfil.png" alt="">
+                    </div>
+                </div>
+                <h2 class="profile__name">
+                    Azar Arjmandsadat
+                </h2>
+                <h3 class="profile__profession">
+                    architecture
+                </h3>
+                <ul class="profile__social">
+                    <!-- insert Instagram ID -->
+                    <a href="" target="_blank" class="profile__social-links">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <!-- insert linkedin -->
+                    <a href="" target="_blank" class="profile__social-links">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <!-- insert social media -->
+                    <a href="" target="_blank" class="profile__social-links">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
+            </div>
+            <div class="profile__info grid">
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">10</h3>
+                    <p class="profile__info-description">
+                        years of <br> work
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">122</h3>
+                    <p class="profile__info-description">
+                        completed <br> projects
+                    </p>
+                </div>
+                <div class="profile__info-group">
+                    <h3 class="profile__info-number">5</h3>
+                    <p class="profile__info-description">
+                        colab with <br> company
+                    </p>
+                </div>
+            </div>
+            <div class="profile__buttons">
+                <!-- insert CV -->
+                <a download="" target="_blank" href="assets/pdf/Gianell-Cv.pdf" class="button">
+                    Download CV <i class="ri-download-line"></i>
+                </a>
+                <div class="profile__buttons-small">
+                    <!-- insert whatsApp number -->
+                    <a href="" target="_blank" class="button button__small button__gray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                    <!-- insert  number -->
+                    <a href="" class="button button__small button__gray">
+                        <i class="ri-message-2-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="filters container">
+            <!--=============== FILTERS TABS ===============-->
+            <ul class="filters__content">
+                <button class="filter__button" data-target="#projects">
+                    projects
+                </button>
+                <button class="filter__button" data-target="#skills">
+                    Skills
+                </button>
+            </ul>
+            <div class="filters__sections">
+                <!--=============== PROJECTS ===============-->
+                <div class="projects__content grid" data-content id="projects">
+                    <article class="projects__card">
+                        <img src="assets/img/project1.jpg"  alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">1</span>
+                                    <h3 class="projects__title">architecture</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img src="assets/img/project2.jpg"  alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">2</span>
+                                    <h3 class="projects__title">architecture</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                               
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img src="assets/img/project3.jpg"  alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">3</span>
+                                    <h3 class="projects__title">architecture</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img src="assets/img/project4.jpg"  alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">4</span>
+                                    <h3 class="projects__title">architecture</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img src="assets/img/project5.jpg"  alt="" class="projects__img">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">5</span>
+                                    <h3 class="projects__title">architecture</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--=============== SKILLS ===============-->
+                <div class="skills__content grid" data-content id="Skills">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
