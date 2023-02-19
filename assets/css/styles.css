@@ -293,7 +293,7 @@ img {
   position: absolute;
   height: 100%;
   width: 100%;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
   background: linear-gradient(180deg,
       hsla(var(--hue), 24%, 40%, .3)0%,
@@ -318,6 +318,10 @@ img {
 .projects__button { 
    padding: .5rem;
 
+}
+.projects__card:hover
+.projects__modal {
+  bottom: 0;
 }
 
 /*=============== SKILLS ===============*/
