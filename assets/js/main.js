@@ -15,4 +15,3 @@ tabs.forEach(tab => {
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-fun
