@@ -301,7 +301,7 @@ img {
   display: grid;
   align-items: flex-end;
   padding: 1.5rem 1.25rem;
-  transition: 320ms;
+  transition:  .3s ease-in-out;
 }
 
 .projects__subtitle ,
@@ -325,11 +325,48 @@ img {
 }
 
 /*=============== SKILLS ===============*/
+.skills__content {
+  row-gap: 3.5rem;
 
+}
+.skills__title{
+  font-size: var(h3);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.skills__box{
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+.skills__group {
+  display: grid;
+  align-content: flex-start;
+}
+.skill__data {
+  display: flex;
+  column-gap: .5rem;
+}
+.skill__data {
+  font-size: 1rem;
+  color: var(--first-color);
+}
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  line-height: 18px;
+}
+.skills__level {
+  font-size: var(--smaller-font-size);
+}
 
 /* Hide and show projects & skills */
-
-
+.filters [data-content]{
+  display: none;
+}
+.filters__active[data-content]{
+  display: grid;
+}
 /* Activate button filter */
 
 
