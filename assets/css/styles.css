@@ -12,11 +12,11 @@
       Teal: hsl(174, 63%, 62%)
   */
 
-  --hue: 207;
-  --sat: 90%;
-  --lig: 61%;
+  --hue: 174;
+  --sat: 63%;
+  --lig: 62%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+  --first-color-alt: hsl(var(--hue), var(--sat), 71%);
   /* -4% */
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 12%, 45%);
@@ -57,8 +57,9 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .3s;
+  transition: .32s;
   /* For animation dark mode */
+  transition: 32ms;
 }
 
 h1,
@@ -101,18 +102,34 @@ body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
   --body-color: hsl(var(--hue), 40%, 8%);
-  --container-color: #fff;
+  --container-color: hsl(var(--hue), 25%, 12%);
 }
 
 /*========== 
     Color changes in some parts of 
     the website, in light theme
 ==========*/
-
-
+.dark-theme .button__gray{
+  background-color: var(--container-color);
+}
+.dark-theme .button__gray:hover{
+  background-color: hsl(var(--hue), 24%, 16%);
+}
+.dark-theme .filters__content{
+  background-color: var(--container-color);
+}
+.dark-theme::-webkit-scrollbar{
+  background-color: hsl(var(--hue), 8%, 16%);
+}
+.dark-theme::-webkit-scrollbar-thumb{
+  background-color: hsl(var(--hue), 8%, 24%);
+}
+.dark-theme::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(var(--hue), 8%, 32%);
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
+  max-width: 1500px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -299,7 +316,7 @@ body.dark-theme {
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  transition:  .3s ease-in-out;
+  transition:  .32s ease-in-out;
 }
 
 .projects__card img {
@@ -319,7 +336,7 @@ body.dark-theme {
   display: grid;
   align-items: flex-end;
   padding: 1.5rem 1.25rem;
-  transition:  .3s ease-in-out;
+  transition:  .32s ease-in-out;
 }
 
 .projects__subtitle ,
@@ -396,6 +413,8 @@ body.dark-theme {
   margin: 2.5rem 0 2rem ;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+  justify-content: center;
+  text-align: center;
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -414,9 +433,93 @@ body.dark-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 320px){
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .profile__info{
+    column-gap: 1.5rem;
+  }
+  .profile__buttons{
+    flex-direction: column;
+    row-gap: 1rem;
 
+  }
+  .skills__box{
+    column-gap: 1rem;
+  }
+}
 
 /* For medium devices */
-
-
+@media screen and (min-width: 576px){
+  .project-content{
+    grid-template-columns: 332px;
+    justify-content: center;
+  }
+  .filters__content{
+    width: 332px;
+    margin: 3rem auto;
+  }
+}
+@media screen and (min-width: 776px){
+  .project-content , 
+  .skill-content{
+    grid-template-columns: repeat(2,332px);
+  }
+  .skill-content{
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
 /* For large devices */
+@media screen and (min-width: 992px){
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .change-theme{
+    top: 2,5rem;
+    right: 2.5rem
+  }
+  .profile{
+    padding-top: 4rem;
+  }
+  .profile__border{
+    width: 135px;
+    height: 135px;
+    margin-bottom: 1rem;
+  }
+  .profile__perfile{
+    width: 120px;
+    height: 120px;
+  }
+  .profile__perfile img {
+    width: 90px;
+  }
+  .profile__profession{
+    margin-bottom: 1.5rem;
+  }
+  .profile__info{
+    column-gap: 3rem;
+  }
+  .profile__info-description{
+    font-size: var(--small-font-size);
+  }
+  .profile__buttons {
+    column-gap: 2rem;
+  }
+  .project-content{
+    gap: 2rem 3rem;
+  }
+  .projects__modal{
+    padding: 1.5rem;
+  }
+  .skill-content{
+    font-size: var(--normal-font-size);
+    margin-bottom: 2.5rem;
+  }
+  .footer__copy{
+    margin: 4.5rem 0 2.5rem;
+  }
+}
