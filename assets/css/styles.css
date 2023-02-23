@@ -10,11 +10,15 @@
       Purple: hsl(250, 66%, 75%)
       Pink: hsl(356, 66%, 75%)
       Teal: hsl(174, 63%, 62%)
+      red :hsl(355, 78, 56)
+      orange : hsl(12, 83, 62)
+      brown : hsl(18, 38, 34)
+      light blue : hsl (186, 89, 29)
   */
 
-  --hue: 174;
-  --sat: 63%;
-  --lig: 62%;
+  --hue: 355;
+  --sat: 78%;
+  --lig: 56%;
   --first-color: hsl(var(--hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--hue), var(--sat), 71%);
   /* -4% */
@@ -478,6 +482,9 @@ body.dark-theme {
     margin-left: auto;
     margin-right: auto;
   }
+  .filters__content{
+    width: 500px;
+  }
   .change-theme{
     top: 2,5rem;
     right: 2.5rem
@@ -510,7 +517,11 @@ body.dark-theme {
     column-gap: 2rem;
   }
   .project-content{
-    gap: 2rem 3rem;
+    gap: 2rem 12rem;
+  }
+  .projects__card{
+    width: 500px;
+    margin-left: -5.15rem;
   }
   .projects__modal{
     padding: 1.5rem;
@@ -518,6 +529,13 @@ body.dark-theme {
   .skill-content{
     font-size: var(--normal-font-size);
     margin-bottom: 2.5rem;
+    column-gap: 12rem;
+  }
+  .skills__box{
+    column-gap: 5rem;
+  }
+  .skills__name{
+    font-size: var(--h3-font-size);
   }
   .footer__copy{
     margin: 4.5rem 0 2.5rem;
