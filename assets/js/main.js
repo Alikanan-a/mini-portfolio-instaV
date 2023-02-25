@@ -75,7 +75,7 @@ const sr = ScrollReveal({
   delay : 400 ,
 })
 
-sr.reveal('.profile__border'),
+sr.reveal('.profile__border')
 sr.reveal('.profile__name'  , {delay:500})
 sr.reveal('.profile__profession'  , {delay:600})
 sr.reveal('.profile__social'  , {delay:700})
@@ -83,3 +83,21 @@ sr.reveal('.profile__info-group' , {interval: 100,delay:700})
 sr.reveal('.profile__buttons'  , {delay:800})
 sr.reveal('.filters__content'  , {delay:900})
 sr.reveal('.filters'  , {delay:1000})
+  
+var typingEffect = new Typed(".multiText", {
+  strings :['architecture','Designer', 'house-designer'],
+  loop: true,
+  typeSpeed :100,
+  backSpeed:80,
+  backDelay:1500
+})
+
+
+//   document.getElementById("errorMsg").style.display = "none";
+// function validateForm() {
+//   let x = document.forms["myForm"]["fname"].value;
+//   if (x == "") {
+// document.getElementById("errorMsg").style.display = "block";
+//     return false;
+//   }
+// }
