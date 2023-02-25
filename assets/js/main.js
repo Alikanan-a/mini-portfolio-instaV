@@ -16,6 +16,14 @@ tabs.forEach(tab => {
         tab.classList.add('filter-tab-active')
     })
 });
+// <!--=============== colors ===============-->
+const Purple = document.querySelector('.menu > .toggle:checked ~ .tab:nth-of-type(2)')
+const Pink = document.querySelector('.menu > .toggle:checked ~ .tab:nth-of-type(2)')
+const Teal = document.querySelector('.menu > .toggle:checked ~ .tab:nth-of-type(2)')
+const red = document.querySelector('.menu > .toggle:checked ~ .tab:nth-of-type(2)')
+const orange = document.querySelector('.menu > .toggle:checked ~ .tab:nth-of-type(2)')
+const brown = document.querySelector('.menu > .toggle:checked ~ .tab:nth-of-type(2)')
+const lightBlue = document.querySelector('.menu > .toggle:checked ~ .tab:nth-of-type(2)')
 // <!--=============== Jquery ===============-->
 // $(function () {
 //   let project = true;
