@@ -214,10 +214,102 @@ var typingEffect = new Typed(".multiText", {
 
 
 const openButton = document.querySelector('#open-btn')
-const closeButton = document.querySelector('#close-btn')
+const openButton1 = document.querySelector('#open-btn1')
+const openButton2 = document.querySelector('#open-btn2')
+const openButton3 = document.querySelector('#open-btn3')
+const openButton4 = document.querySelector('#open-btn4')
+const closeButton = document.querySelector('.close-btn')
 const modalContainer = document.querySelector('#modal-container')
+const modalContainer1 = document.querySelector('#modal-container')
+const modalContainer2 = document.querySelector('#modal-container')
+const modalContainer3 = document.querySelector('#modal-container')
+const modalContainer4 = document.querySelector('#modal-container')
 
 openButton.addEventListener('click',function(){
+
+    modalContainer.style.display = 'block';
+    
+})
+
+closeButton.addEventListener('click', () => {
+
+    modalContainer.style.display = 'none';
+
+})
+
+window.addEventListener('click', (e)=> {
+
+    if(e.target === modalContainer){
+
+        modalContainer.style.display = 'none';
+
+    }
+    //console.log(e.target)
+})
+openButton1.addEventListener('click',function(){
+
+    modalContainer.style.display = 'block';
+    
+})
+
+closeButton.addEventListener('click', () => {
+
+    modalContainer.style.display = 'none';
+
+})
+
+window.addEventListener('click', (e)=> {
+
+    if(e.target === modalContainer){
+
+        modalContainer.style.display = 'none';
+
+    }
+    //console.log(e.target)
+})
+openButton2.addEventListener('click',function(){
+
+    modalContainer.style.display = 'block';
+    
+})
+
+closeButton.addEventListener('click', () => {
+
+    modalContainer.style.display = 'none';
+
+})
+
+window.addEventListener('click', (e)=> {
+
+    if(e.target === modalContainer){
+
+        modalContainer.style.display = 'none';
+
+    }
+    //console.log(e.target)
+})
+openButton3.addEventListener('click',function(){
+
+    modalContainer.style.display = 'block';
+    
+})
+
+closeButton.addEventListener('click', () => {
+
+    modalContainer.style.display = 'none';
+
+})
+
+window.addEventListener('click', (e)=> {
+
+    if(e.target === modalContainer){
+
+        modalContainer.style.display = 'none';
+
+    }
+    //console.log(e.target)
+})
+openButton4.addEventListener('click',function(){
 
     modalContainer.style.display = 'block';
     
