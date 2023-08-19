@@ -220,23 +220,21 @@ const openButton3 = document.querySelector('#open-btn3')
 const openButton4 = document.querySelector('#open-btn4')
 const closeButton = document.querySelector('.close-btn')
 const modalContainer = document.querySelector('#modal-container')
-const modalContainer1 = document.querySelector('#modal-container')
-const modalContainer2 = document.querySelector('#modal-container')
-const modalContainer3 = document.querySelector('#modal-container')
-const modalContainer4 = document.querySelector('#modal-container')
+const modalContainer1 = document.querySelector('#modal-container1')
+const modalContainer2 = document.querySelector('#modal-container2')
+const modalContainer3 = document.querySelector('#modal-container3')
+const modalContainer4 = document.querySelector('#modal-container4')
 
 openButton.addEventListener('click',function(){
 
     modalContainer.style.display = 'block';
     
 })
-
 closeButton.addEventListener('click', () => {
 
     modalContainer.style.display = 'none';
 
 })
-
 window.addEventListener('click', (e)=> {
 
     if(e.target === modalContainer){
@@ -246,86 +244,99 @@ window.addEventListener('click', (e)=> {
     }
     //console.log(e.target)
 })
+
+
+
+
+
 openButton1.addEventListener('click',function(){
 
-    modalContainer.style.display = 'block';
+  modalContainer1.style.display = 'block';
     
 })
-
 closeButton.addEventListener('click', () => {
 
-    modalContainer.style.display = 'none';
+  modalContainer1.style.display = 'none';
 
 })
-
 window.addEventListener('click', (e)=> {
 
-    if(e.target === modalContainer){
+    if(e.target === modalContainer1){
 
-        modalContainer.style.display = 'none';
+      modalContainer1.style.display = 'none';
 
     }
     //console.log(e.target)
 })
+
+
+
+
+
 openButton2.addEventListener('click',function(){
 
-    modalContainer.style.display = 'block';
+    modalContainer2.style.display = 'block';
     
 })
 
 closeButton.addEventListener('click', () => {
 
-    modalContainer.style.display = 'none';
+    modalContainer2.style.display = 'none';
 
 })
 
 window.addEventListener('click', (e)=> {
 
-    if(e.target === modalContainer){
+    if(e.target === modalContainer2){
 
-        modalContainer.style.display = 'none';
+        modalContainer2.style.display = 'none';
 
     }
     //console.log(e.target)
 })
+
+
+
+
 openButton3.addEventListener('click',function(){
 
-    modalContainer.style.display = 'block';
+    modalContainer3.style.display = 'block';
     
 })
-
 closeButton.addEventListener('click', () => {
 
-    modalContainer.style.display = 'none';
+    modalContainer3.style.display = 'none';
 
 })
-
 window.addEventListener('click', (e)=> {
 
-    if(e.target === modalContainer){
+    if(e.target === modalContainer3){
 
-        modalContainer.style.display = 'none';
+        modalContainer3.style.display = 'none';
 
     }
     //console.log(e.target)
 })
+
+
+
+
+
 openButton4.addEventListener('click',function(){
 
-    modalContainer.style.display = 'block';
+    modalContainer4.style.display = 'block';
     
 })
-
 closeButton.addEventListener('click', () => {
 
-    modalContainer.style.display = 'none';
+    modalContainer4.style.display = 'none';
 
 })
-
 window.addEventListener('click', (e)=> {
 
-    if(e.target === modalContainer){
+    if(e.target === modalContainer4){
 
-        modalContainer.style.display = 'none';
+        modalContainer4.style.display = 'none';
 
     }
     //console.log(e.target)

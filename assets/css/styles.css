@@ -1080,8 +1080,32 @@ form p {
   color: black;
 
 }
+#open-btn1:hover {
 
-#modal {
+  background-color: white;
+  color: black;
+
+}
+#open-btn2:hover {
+
+  background-color: white;
+  color: black;
+
+}
+#open-btn3:hover {
+
+  background-color: white;
+  color: black;
+
+}
+#open-btn4:hover {
+
+  background-color: white;
+  color: black;
+
+}
+
+.modal {
 
   background-color: var(--body-color);
   width: 700px;
